@@ -57,11 +57,11 @@ function Contacts() {
                         console.log(error.text);
                     });
             } else {
-                setErrMsg('Invalid email');
+                setErrMsg('Votre email est invalide');
                 setOpen(true);
             }
         } else {
-            setErrMsg('Enter all the fields');
+            setErrMsg('Remplir tous les champs');
             setOpen(true);
         }
     };
@@ -78,11 +78,11 @@ function Contacts() {
                     <div className={styles.contactsForm}>
                         <form ref={form} onSubmit={handleContactForm}>
                             <div className={styles.inputContainer}>
-                                <label htmlFor='Name'
+                                <label htmlFor='Nom'
                                     className="bg-[#15202B] text-[#EFF3F4] 
                                 font-semibold text-[0.9rem] py-0 px-[5px] 
                                 inline-flex translate-x-[25px] translate-y-[50%]">
-                                    Name
+                                    Nom
                                 </label>
                                 <input
                                     placeholder='John Doe'
@@ -129,7 +129,7 @@ function Contacts() {
                                     Message
                                 </label>
                                 <textarea
-                                    placeholder='Type your message....'
+                                    placeholder='Votre message....'
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
                                     type='text'
@@ -147,7 +147,7 @@ function Contacts() {
                                     className="bg-[#1D9BF0] 
                                     hover:bg-[#8B98A5] text-[#15202B]
                                      transition delay-200 ">
-                                    <p>{!success ? 'Send' : 'Sent'}</p>
+                                    <p>{!success ? 'Envoyer' : 'Envoyé'}</p>
                                     <div className={styles.submitIcon}>
                                         <AiOutlineSend
                                             className={styles.sendIcon}

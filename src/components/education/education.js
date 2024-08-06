@@ -19,7 +19,7 @@ function Education() {
                         <AnimationLottie animationPath={education} />
                     </div>
                     <div className={styles.educationDescription}>
-                        <h1 style={{ color: theme.primary }}>Education</h1>
+                        <h1 style={{ color: theme.primary }}>Formation</h1>
                         {educationData.map(edu => (
                             <EducationCard
                                 key={edu.id}

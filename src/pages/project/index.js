@@ -70,7 +70,7 @@ function ProjectPage() {
                 <div className="projectPage-search">
                     <input type="text" value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        placeholder="Search project..."
+                        placeholder="Rechercher un projet..."
                         className={classes.search} />
                 </div>
                 <div className="project-container mt-5">
