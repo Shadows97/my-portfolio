@@ -72,6 +72,8 @@ import picsart from '../assets/svg/skills/picsart.svg'
 import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
+import kubernetes from '../assets/svg/skills/kubernetes.svg'
+import ansible from '../assets/svg/skills/ansible.svg'
 
 import canva from '../assets/svg/skills/canva.svg'
 
@@ -227,6 +229,10 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+        case 'kubernetes':
+            return kubernetes;
+        case 'ansible':
+            return ansible;
         default:
             break;
     }

@@ -6,80 +6,97 @@ import seven from '../assets/svg/projects/seven.svg'
 import six from '../assets/svg/projects/six.svg'
 import three from '../assets/svg/projects/three.svg'
 import two from '../assets/svg/projects/two.svg'
+import morpio from '../assets/png/morpio.png'
+import yieldy from '../assets/png/yieldy.png'
+import senjayer from '../assets/png/senjayer.png'
+import june from '../assets/png/june.png'
+import code from '../assets/png/code.png'
+
 
 
 export const projectsData = [
+    
+    
     {
         id: 1,
-        projectName: 'Ayla Networks',
-        projectDesc: 'This project about Simplifying the Development of Smart Home & IoT Solutions.',
-        tags: ['React', 'SAAS', 'React Bootstrap'],
+        projectName: 'Yieldy',
+        projectDesc: 'Ceci est un projet pour une application mobile réalisée avec React Native et Django pour l\'investissement financier personnel.',
+        tags: ['React Native', 'Django'],
         code: '',
-        demo: 'https://www.aylanetworks.com/',
-        image: six
+        demo: 'https://drive.google.com/file/d/1Kr2x55yP8IGIh6Mt0aM030N1-nhMjz2x/view?usp=sharing',
+        image: yieldy
     },
     {
         id: 2,
-        projectName: 'Jewelry Niche',
-        projectDesc: 'This project is a Jewelry shop, Customer can be buy product and manage them and make payment.',
-        tags: ['React', 'Express', 'Material Ui'],
-        code: 'https://github.com/said7388/jewelry-niche',
-        demo: 'https://pandora-web.netlify.app/',
-        image: seven
+        projectName: 'Senjayer',
+        projectDesc: 'Ceci est un projet de vente de billets d\'événements réalisé avec ReactJs.',
+        tags: ['ReactJs'],
+        code: '',
+        demo: 'https://drive.google.com/drive/folders/1fvVNtM2qz_girskLGHtmYZp-pneMtObD?usp=sharing',
+        image: senjayer
     },
     {
         id: 3,
-        projectName: 'Travel Agency',
-        projectDesc: 'This project about travel agency management.',
-        tags: ['React', 'CSS', 'Material Ui'],
-        code: 'https://github.com/said7388/Travel-Agency-client',
-        demo: 'https://travel-agency-fc58b.web.app/',
-        image: eight
+        projectName: 'June',
+        projectDesc: 'June est un projet de prise de rendez-vous et de suivi pour un accompagnement psychologique.',
+        tags: ['ReactJs','Ionic'],
+        code: '',
+        demo: 'https://drive.google.com/drive/folders/1SW1-6ZvrmwrtH36KFQA78P2uDbqRpkUh?usp=sharing',
+        image: june
     },
     {
         id: 4,
-        projectName: 'Android Patient Tracker',
-        projectDesc: 'This project involves the development of an Android application for viewing and managing patient data.',
-        tags: ['Flutter', 'Firebase'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: four
+        projectName: 'Morpio Game',
+        projectDesc: 'Ceci est un projet de jeu morpio réalisé avec Spring Boot et React Native.',
+        tags: ['Spring Boot', 'React Native'],
+        code: 'https://github.com/Shadows97/morpio-game',
+        demo: 'https://drive.google.com/file/d/19TGLRJtqdXpYSDZexTGKMWatdlc1MJRu/view?usp=sharing',
+        image: morpio
     },
     {
         id: 5,
-        projectName: 'E-Commerce App',
-        projectDesc: 'A Simple E-commerce application',
-        tags: ['React Native', 'Firebase'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: five
+        projectName: 'Numassa',
+        projectDesc: 'Ceci est un projet pour une application mobile réalisée avec React Native et Odoo pour vendre des produits dont la date d\'expiration est supérieure à 30 jours.',
+        tags: ['React Native', 'Odoo'],
+        code: 'https://github.com/Shadows97/NumassaMobileApp',
+        demo: 'https://github.com/Shadows97/NumassaMobileApp',
+        image: code
     },
     {
         id: 6,
-        projectName: 'Uber Lite',
-        projectDesc: 'Uber clone',
-        tags: ['Flutter'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: one
+        projectName: 'Paylio',
+        projectDesc: 'Ce projet est un exemple de plateforme de transfert d\'argent réalisée avec Laravel.',
+        tags: ['Laravel'],
+        code: 'https://github.com/Shadows97/paylio',
+        demo: '',
+        image: code
     },
     {
         id: 7,
-        projectName: 'Stock Market App',
-        projectDesc: 'A simple stock market API app',
-        tags: ['React', 'Redux', 'Bootstrap'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: two
+        projectName: 'PySubtitle',
+        projectDesc: 'PySubtitle est une bibliothèque Python conçue pour automatiser le processus de génération de sous-titres pour les fichiers vidéo. Elle extrait l\'audio des fichiers vidéo, convertit l\'audio en texte en utilisant les services de reconnaissance vocale de Google, et génère des fichiers VTT (Web Video Text Tracks) pour les sous-titres. Cette bibliothèque est particulièrement utile pour créer des sous-titres pour des vidéos dans différentes langues, rendant le contenu plus accessible à un public plus large.',
+        tags: ['Python'],
+        code: 'https://github.com/Shadows97/PySubtitle',
+        demo: 'https://pypi.org/project/PySubtitle/',
+        image: code
     },
     {
         id: 8,
-        projectName: 'Car Pooling System',
-        projectDesc: 'The carpooling system merges multiple people in a car which leads to meet new people, reduces pollution',
-        tags: ['Flutter', 'React'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: three
+        projectName: 'Stream-Server',
+        projectDesc: 'Ceci est un projet de serveur de streaming pour la détection réalisé avec Flask.',
+        tags: ['Python', 'Flask'],
+        code: 'https://github.com/Shadows97/Stream-Server',
+        demo: '',
+        image: code
+    },
+    {
+        id: 9,
+        projectName: 'Object Detection Mobile App',
+        projectDesc: 'Ceci est un projet de détection d\'objets réalisé avec AWS Rekognition et React Native.',
+        tags: ['React Native', 'AWS Rekognition'],
+        code: 'https://github.com/Shadows97/mobile-app-object-detection',
+        demo: 'https://github.com/Shadows97/mobile-app-object-detection',
+        image: code
     },
 ]
 

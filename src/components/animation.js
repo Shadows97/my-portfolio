@@ -1,7 +1,9 @@
-import Lottie from "lottie-react";
-import React from "react";
+// import Lottie from "lottie-react";
+import React, { useEffect, useState } from "react";
+import dynamic from 'next/dynamic';
 
 const AnimationLottie = ({ animationPath, width }) => {
+  const [Lottie, setLottie] = useState(undefined)
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -11,9 +13,15 @@ const AnimationLottie = ({ animationPath, width }) => {
     }
   };
 
+  useEffect(() => {
+    setLottie(dynamic(() => import('lottie-react'), { ssr: false }))
+  }, [])
+
 
   return (
-    <Lottie {...defaultOptions} />
+    <>
+      {Lottie && <Lottie {...defaultOptions} />}
+    </>
   );
 };
 

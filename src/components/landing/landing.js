@@ -83,8 +83,8 @@ function Landing() {
                 <Image
                     src={headerData.image}
                     alt=''
-                    width={350}
-                    height={350}
+                    width={250}
+                    height={250}
                     className={styles.landingImg}
                     style={{
                         opacity: `${drawerOpen ? '0' : '1'}`,
@@ -103,9 +103,9 @@ function Landing() {
                         <h1>{headerData.name}</h1>
                         <Typed
                             strings={[
-                                'Backend Developer',
-                                'Frontend Developer',
-                                'Fullstack Developer']}
+                                'Développeur Backend',
+                                'Développeur Frontend',
+                                'Développeur Fullstack']}
                             typeSpeed={40}
                             backSpeed={50}
                             className={styles.typedHeader}

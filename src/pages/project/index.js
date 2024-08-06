@@ -2,10 +2,10 @@ import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import React, { useContext, useState } from 'react';
 import { AiOutlineHome } from "react-icons/ai";
-import { SingleProject } from '../../components';
+import { SingleProject, Navbar } from '../../components';
 import Link from '../../components/link';
 import { ThemeContext } from '../../contexts/theme-context';
-import { projectsData } from '../../data/projectsData';
+import { projectsData } from '../../data/projects-data';
 
 function ProjectPage() {
     const [search, setSearch] = useState('')
@@ -65,12 +65,7 @@ function ProjectPage() {
     return (
         <div className="projectPage" style={{ backgroundColor: theme.secondary }}>
 
-            <div className="projectPage-header" style={{ backgroundColor: theme.primary }}>
-                <Link href="/">
-                    <AiOutlineHome className={classes.home} />
-                </Link>
-                <h1 style={{ color: theme.secondary }}>Projects</h1>
-            </div>
+           
             <div className="projectPage-container">
                 <div className="projectPage-search">
                     <input type="text" value={search}
@@ -78,8 +73,8 @@ function ProjectPage() {
                         placeholder="Search project..."
                         className={classes.search} />
                 </div>
-                <div className="project-container">
-                    <Grid className="project-grid"
+                <div className="project-container mt-5">
+                    <Grid className="project-grid gap-5"
                         container direction="row" alignItems="center"
                         justifyContent="center">
                         {filteredArticles.map(project => (
